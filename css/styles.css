@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --Strong_Cyan: hsl(171, 66%, 44%);
+    --Light_Blue: hsl(233, 100%, 69%);
+    --Dark_Grayish_Blue: hsl(210, 10%, 33%);
+    --Grayish_Blue: hsl(201, 11%, 66%);
+}
+
+/* GENERAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Bai Jamjuree';
+}
+body{
+    min-height: 100vh;
+    padding: 120px 1rem;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    color: var(--Grayish_Blue);
+    line-height: 1.7rem;
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: var(--Dark_Grayish_Blue);
+}
+h1{
+    font-size: 2rem;
+}
+/* HEADER STYLES */
+header{
+    width: 100%;
+    min-width: 320px;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+header .text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+header .buttons{
+    width: 100%;
+    min-width: 200px;
+    max-width: 600px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+}
+button{
+    width: 100%;
+    min-width: 250px;
+    max-width: 120px;
+    font-weight: bold;
+    padding: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.438) ;
+    color: white;
+    cursor: pointer;
+}
+.buttons button:first-child{
+    background-color: var(--Strong_Cyan);
+}
+.buttons button:last-child{
+    background-color: var(--Light_Blue);
+}
+
+/* MAIN STYLES */
+main{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section{
+    margin-top: 10rem;
+}
+.snippet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.snippet h2{
+    font-size: 1.8rem;
+}
+.snippet .title{
+    width: 100%;
+    min-width: 320px;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.characteristics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 50px;
+}
+.characteristics img{
+    width: 100%;
+    min-width: 345px;
+    max-width: 550px;
+}
+.characteristics .div{
+    width: 100%;
+    min-width: 345px;
+    max-width: 380px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.clipboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 50px;
+}
+.clipboard .title{
+    width: 100%;
+    min-width: 320px;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.clipboard img{
+    width: 100%;
+    min-width: 345px;
+    max-width: 850px;
+}
+
+.workflow{
+    margin-top: 7rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 50px;
+}
+.workflow .title{
+    width: 100%;
+    min-width: 320px;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.workflow .grid{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 40px;
+}
+.workflow .grid div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+main .brands{
+    width: 100%;
+    min-width: 350px;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.download{
+    width: 100%;
+    min-width: 320px;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.download .text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.download .buttons{
+    width: 100%;
+    min-width: 200px;
+    max-width: 600px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+}
+button{
+    width: 100%;
+    min-width: 250px;
+    max-width: 120px;
+    font-weight: bold;
+    padding: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.438) ;
+    color: white;
+    cursor: pointer;
+}
+.buttons button:first-child{
+    background-color: var(--Strong_Cyan);
+}
+.buttons button:last-child{
+    background-color: var(--Light_Blue);
+}
+
+footer{
+    margin-top: 10rem;
+    width: 100%;
+    min-width: 350px;
+    max-width: 1200px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+footer img{
+    width: 50px;
+}
+footer .grid{
+    width: 100%;
+    min-width: 350px;
+    max-width: 580px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+footer .grid p:hover{
+    cursor: pointer;
+    color: var(--Dark_Grayish_Blue);
+}
+footer .images{
+    width: 175px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+footer .images img{
+    width: 30px;
+}
+
+@media (min-width:1400px) {
+    main .snippet .characteristics .div p, h3{
+        text-align: left;
+    }
+    footer{
+        gap: 80px;
+    }
+}
